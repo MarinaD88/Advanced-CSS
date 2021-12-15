@@ -8,92 +8,136 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced CSS - Assignment 3</title>
 
     <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
 
-    body {
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        #Heading {
+            max-width: 70%;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        #Heading p {
+            text-align: justify;
+            margin-top: 40px;
+        }
+
+        #Placeholder {
+
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(5, 1fr);
+            justify-items: center;
         
-    }
-
-    #Heading {
-        
-        max-width: 580px;
-        margin: auto;
-        margin-top: 100px;
-    }
-
-    #Heading p {
-        text-align: justify;
-        margin-top: 40px;
-    }
     
-    #Placeholder {
-        display: grid;
-        grid-template-columns: repeat(5,  100px);
-        gap: 20px;
-    }
 
-    #Placeholder p {
-        background-color: rgb(255, 255, 255);
-        font-size: 10px;
-        text-align: center;
-        padding: 5px;
-        margin-top: 80px;
-        border-radius: 0px 0px 10px 10px;
-        
-    }
+        }
 
-    #Placeholder div {
 
-        background-color: rgb(106, 149, 230);
-        background-image: url(Assets/placeholder-image.png);
-        background-repeat: no-repeat;
-        background-size: 120px;
-        background-position:top; 
 
-        width: 100px;
-        height: 100px;
-        
-        border-radius: 10px;
-        box-shadow: 0px 0px 5px rgb(124, 124, 126);
-        
-        
-    }
+        #Placeholder>div {
 
+            background-color: rgb(106, 149, 230);
+            background-image: url(Assets/placeholder-image.png);
+            background-repeat: no-repeat;
+            background-size: 120px;
+            background-position: top;
+
+            width: 100px;
+            height: 100px;
+
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgb(124, 124, 126);
+        }
+
+        #Placeholder p {
+            background-color: rgb(255, 255, 255);
+            font-size: 10px;
+            text-align: center;
+            padding: 5px;
+            margin-top: 80px;
+            border-radius: 0px 0px 10px 10px;
+
+        }
+
+
+        @media all and (max-width: 1024px) {
+            #Placeholder {
+                grid-template-columns: repeat(5, 1fr);
+
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #Placeholder {
+                grid-template-columns: repeat(3, 1fr);
+             
+            }
+        }
+
+        @media screen and (max-width: 667px) {
+            #Placeholder {
+                grid-template-columns: repeat(1, 1fr);
+            
+            }
+        }
     </style>
-    
+
 </head>
 
 <body>
 
-<div id=Heading >
+    <div id=Heading>
         <h3>Gallery Heading</h3>
-    <div id=Placeholder>
-        <div><p>Image Title</p></div>
-        <div><p>Image Title</p></div>
-        <div><p>Image Title</p></div>
-        <div><p>Image Title</p></div>
-        <div><p>Image Title</p></div>
-        <div><p>Image Title</p></div>
-        <div><p>Image Title</p></div>
-        <div><p>Image Title</p></div>
-        <div><p>Image Title</p></div>
-        <div><p>Image Title</p></div>
+        <div id=Placeholder>
+            <div>
+                <p>Image Title</p>
+            </div>
+            <div>
+                <p>Image Title</p>
+            </div>
+            <div>
+                <p>Image Title</p>
+            </div>
+            <div>
+                <p>Image Title</p>
+            </div>
+            <div>
+                <p>Image Title</p>
+            </div>
+            <div>
+                <p>Image Title</p>
+            </div>
+            <div>
+                <p>Image Title</p>
+            </div>
+            <div>
+                <p>Image Title</p>
+            </div>
+            <div>
+                <p>Image Title</p>
+            </div>
+            <div>
+                <p>Image Title</p>
+            </div>
+        </div>
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Accusantium suscipit perferendis ut hic impedit eaque ratione voluptates
+            ad quod voluptas illo voluptatem, odit sit magni animi amet,
+            tenetur, repellat alias. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Accusantium suscipit perferendis ut hic impedit eaque ratione voluptates
+            ad quod voluptas illo voluptatem, odit sit magni animi amet,
+            tenetur, repellat alias.
+        </p>
+
     </div>
-
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-       Accusantium suscipit perferendis ut hic impedit eaque ratione voluptates 
-       ad quod voluptas illo voluptatem, odit sit magni animi amet, 
-       tenetur, repellat alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-       Accusantium suscipit perferendis ut hic impedit eaque ratione voluptates 
-       ad quod voluptas illo voluptatem, odit sit magni animi amet, 
-       tenetur, repellat alias.
-    </p>
-
-</div>
 
 
 </body>
